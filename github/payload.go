@@ -381,7 +381,7 @@ type DeploymentPayload struct {
 		Sha     string `json:"sha"`
 		Ref     string `json:"ref"`
 		Task    string `json:"task"`
-		Payload struct {
+		Payload map[string]interface {
 		} `json:"payload"`
 		Environment string  `json:"environment"`
 		Description *string `json:"description"`
@@ -555,7 +555,7 @@ type DeploymentStatusPayload struct {
 		Sha     string `json:"sha"`
 		Ref     string `json:"ref"`
 		Task    string `json:"task"`
-		Payload struct {
+		Payload map[string]interface {
 		} `json:"payload"`
 		Environment string  `json:"environment"`
 		Description *string `json:"description"`
